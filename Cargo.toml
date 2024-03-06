@@ -43,5 +43,5 @@ tokio = { version = "1", features = ["full"], optional = true }
 async-std = { version = "1", features = ["default"], optional = true }
 
 [build-dependencies]
-reqwest = { version = "0.11", features = ["blocking"] }
+reqwest = { version = "0.11", default-features = false, features = ["blocking", "rustls-tls"] }
 tonic-build = "0.10"
